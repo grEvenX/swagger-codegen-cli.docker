@@ -52,7 +52,7 @@ Example:
 ```
 docker run -it -v ~/temp/swagger-generated:/swagger-api/out \
     -v ~/temp/swagger-definitions:/swagger-api/yaml \
-    jimschubert/swagger-codegen-cli generate \
+    myworkout/swagger-codegen-cli generate \
     -i /swagger-api/yaml/twitter.yaml \
     -l csharp \
     -o /swagger-api/out/twitter

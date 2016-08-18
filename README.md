@@ -23,7 +23,7 @@ The default is `help`.
 All options for the CLI are supported.
 
 ```
-docker run -it jimschubert/swagger-codegen-cli config-help -l csharp
+docker run -it myworkout/swagger-codegen-cli config-help -l csharp
 ```
 
 For full options details, see the [Swagger Codegen README](https://github.com/swagger-api/swagger-codegen).
@@ -36,7 +36,7 @@ Example:
 
 ```
 docker run -it -v ~/temp/swagger-generated:/swagger-api/out \
-    jimschubert/swagger-codegen-cli generate \
+    myworkout/swagger-codegen-cli generate \
     -i /swagger-api/yaml/petstore-with-fake-endpoints-models-for-testing.yaml \
     -l csharp \
     -o /swagger-api/out/cs

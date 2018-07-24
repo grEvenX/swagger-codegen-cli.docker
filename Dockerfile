@@ -6,8 +6,8 @@ RUN set -x \
     && mkdir -p /swagger-api/out \
     && apk add --no-cache bash \
     && apk add --no-cache --virtual .temporary wget \
-    && wget -qO- https://api.github.com/repos/swagger-api/swagger-codegen/tarball/3.0.0 | tar zxv -C /swagger-api \
-    && mv /swagger-api/swagger-api-swagger-codegen* /swagger-api/swagger-codegen/ \
+    && wget -qO- https://github.com/swagger-api/swagger-codegen/archive/v3.0.0-rc1.tar.gz | tar zxv -C /swagger-api \
+    && mv /swagger-api/swagger-codegen* /swagger-api/swagger-codegen/ \
     && ln -s /swagger-api/swagger-codegen/modules/swagger-codegen/src/test/resources/2_0/ /swagger-api/yaml \
     && apk del .temporary
 
